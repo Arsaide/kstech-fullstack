@@ -9,16 +9,39 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@tanstack/react-query": "^5.51.1",
+    "@tanstack/react-query-devtools": "^5.51.1",
+    "axios": "^1.7.2",
+    "classnames": "^2.5.1",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "html-react-parser": "^5.1.12",
+    "lucide-react": "^0.408.0",
+    "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "react-facebook-pixel": "^1.0.4",
+    "react-hook-form": "^7.52.1",
+    "react-input-mask": "^2.0.4",
+    "sass": "^1.77.5",
+    "scss": "^0.2.4",
+    "swiper": "^11.1.8",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tanstack/eslint-plugin-query": "^5.51.1",
+    "@types/draft-js": "^0.11.18",
+    "@types/draftjs-to-html": "^0.8.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-input-mask": "^3.0.5",
+    "@types/swiper": "^6.0.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.4",
+    "prettier": "^3.3.3",
+    "typescript": "^5"
   }
 }

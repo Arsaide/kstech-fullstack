@@ -1,0 +1,42 @@
+.wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.disabled {
+  opacity: 0.6;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px;
+  min-height: 125px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; // Добавлено для возможности изменения размера по вертикали
+}
+
+.pending {
+  border-color: #999;
+}
+
+.success {
+  border-color: #4caf50;
+}
+
+.error {
+  border-color: #f44336;
+}
+
+.errMsg {
+  color: #f44336;
+  font-size: 12px;
+  margin-top: 5px;
+}
