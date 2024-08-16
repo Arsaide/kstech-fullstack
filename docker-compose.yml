@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  front-next:
+    build:
+      context: ./kstech-frontend
+      dockerfile: Dockerfile
+    container_name: front-next
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3000:3000"
+    networks:
+      - kstech-network
+
+  backend-nest:
+    build:
+      context: ./kstech-backend
+      dockerfile: Dockerfile
+    container_name: backend-nest
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "7000:7000"
+    networks:
+      - kstech-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - front-next
+      - backend-nest
+    networks:
+      - kstech-network
+
+networks:
+  kstech-network:
+    driver: bridge
