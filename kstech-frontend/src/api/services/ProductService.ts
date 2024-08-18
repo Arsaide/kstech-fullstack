@@ -9,7 +9,7 @@ import {
 
 export default class ProductService {
     static async getProductsList(page: number): Promise<AxiosResponse<AllProductResponseModel>> {
-        return $api.get<AllProductResponseModel>(`/products/get?page=${page}`);
+            return $api.get<AllProductResponseModel>(`/products/get?page=${page}`);
     }
 
     static async getProductByCategory(

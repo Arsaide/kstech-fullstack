@@ -2,6 +2,7 @@
 import React from 'react';
 import {Metadata, ResolvingMetadata} from 'next';
 import dynamic from "next/dynamic";
+import {OneProductTypes} from "@/api/models/ProductsModels";
 
 const OneProduct = dynamic(() => import('@/components/pages/catalog/one-product-page/OneProduct'), {
     ssr: false,
