@@ -16,7 +16,7 @@ const nextConfig = {
         // API_URL: 'https://kstech-backend.onrender.com',
         // API_URL: 'http://localhost:7000',
         // API_URL: 'http://localhost/api',
-        API_URL: 'http://ks-tech.com.ua/api',
+        API_URL: 'https://ks-tech.com.ua/api',
         NGINX_API_URL: 'http://nginx/api'
     },
     httpAgentOptions: {
